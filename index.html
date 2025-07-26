@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet&style - Loja de Estilo Pet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+<!-- Cabeçalho -->
+  <header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <img src="imagens/logo.png" alt="Logo Pet&Style" class="w-10 h-10" />
+        <h1 class="text-2xl font-bold text-pink-600">Pet&Style</h1>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="#produtos" class="hover:text-pink-600">Produtos</a>
+        <a href="#depoimentos" class="hover:text-pink-600">Depoimentos</a>
+        <a href="#contato" class="hover:text-pink-600">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-pink-100 py-12 px-4 text-center">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-extrabold mb-4">Estilo e carinho para o seu pet</h2>
+      <p class="text-lg mb-6">Os melhores produtos para pets estilosos, com entrega rápida e segura.</p>
+      <img src="imagens/hero.jpg" alt="Pet estiloso" class="mx-auto rounded-lg shadow-md w-full max-w-3xl" />
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="py-12 bg-white px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Nossos Produtos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Produto 1 -->
+        <div class="border rounded-lg p-4 shadow hover:shadow-lg">
+          <img src="imagens/produto1.jpg" alt="Caminha confortável" class="rounded mb-4" />
+          <h3 class="font-semibold text-lg">Caminha Luxo</h3>
+          <p class="text-sm text-gray-600 mb-2">Conforto total para seu pet dormir como rei.</p>
+          <span class="text-pink-600 font-bold">€49,90</span>
+        </div>
+        <!-- Produto 2 -->
+        <div class="border rounded-lg p-4 shadow hover:shadow-lg">
+          <img src="imagens/produto2.jpg" alt="Brinquedo mordedor" class="rounded mb-4" />
+          <h3 class="font-semibold text-lg">Brinquedo Mordedor</h3>
+          <p class="text-sm text-gray-600 mb-2">Diversão garantida para o seu cãozinho.</p>
+          <span class="text-pink-600 font-bold">€12,90</span>
+        </div>
+        <!-- Produto 3 -->
+        <div class="border rounded-lg p-4 shadow hover:shadow-lg">
+          <img src="imagens/produto3.jpg" alt="Coleira fashion" class="rounded mb-4" />
+          <h3 class="font-semibold text-lg">Coleira Fashion</h3>
+          <p class="text-sm text-gray-600 mb-2">Estilo e segurança para seu pet brilhar.</p>
+          <span class="text-pink-600 font-bold">€18,90</span>
+        </div>
+        <!-- Produto 4 -->
+        <div class="border rounded-lg p-4 shadow hover:shadow-lg">
+          <img src="imagens/produto4.jpg" alt="Shampoo Pet" class="rounded mb-4" />
+          <h3 class="font-semibold text-lg">Shampoo Natural</h3>
+          <p class="text-sm text-gray-600 mb-2">Cuida da pele e pelagem com ingredientes naturais.</p>
+          <span class="text-pink-600 font-bold">€22,90</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="bg-pink-50 py-12 px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">O que dizem nossos clientes</h2>
+      <div class="space-y-4">
+        <blockquote class="italic text-gray-700">"Meu cachorro amou a caminha! Chegou super rápido!" – <strong>Carla Mendes</strong></blockquote>
+        <blockquote class="italic text-gray-700">"Produtos lindos e atendimento excelente. Recomendo demais!" – <strong>Bruno Tavares</strong></blockquote>
+        <blockquote class="italic text-gray-700">"Tudo de alta qualidade. A coleira é linda demais." – <strong>Fernanda Lima</strong></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-12 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">Entre em Contato</h2>
+      <div class="max-w-xl mx-auto space-y-4">
+        <p class="text-center">📧 contato@petstyle.com | 📞 (11) 99999-0000</p>
+        <form class="space-y-4">
+          <input type="text" placeholder="Seu nome" class="w-full border rounded px-4 py-2" required />
+          <input type="email" placeholder="Seu e-mail" class="w-full border rounded px-4 py-2" required />
+          <textarea rows="4" placeholder="Sua mensagem" class="w-full border rounded px-4 py-2" required></textarea>
+          <button type="submit" class="w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 Pet&Style. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
